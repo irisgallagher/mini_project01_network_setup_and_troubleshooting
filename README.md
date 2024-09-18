@@ -56,4 +56,16 @@ A5) Check that the DNS server on the server laptop (the server with the webpage)
 Filename: Append to the README.md under an FAQ heading.
 Length: Minimum of 5 key questions and answers
 
+# Retrospective
+
+A personal reflection on the challenges, lessons, and insights gained throughout the project. The retrospective encourages critical thinking about the project, focusing on the challenges and how they were overcome to foster continuous learning and improvement.
+
+What to Include:
+- Specific challenges encountered during the project and how they were addressed.
+- New skills or insights gained throughout the project.
+- Areas for improvement or what could be done differently in the future.
+
+Filename: Append to the README.md under a Retrospective heading.
+Length: 500 - 700 words
+
 
