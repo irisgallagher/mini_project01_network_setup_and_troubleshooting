@@ -29,4 +29,18 @@ Steps to Set Up a Network:
 8) Setup a Domain Name Systems (DNS) server and practice using the DNS to open webpages from the browser by entering the device's IP Address or domain name. A DNS server translates the domain name into its associated IP Address to locate the server where the webpage is hosted. This allows the computers to communicate so you can recieve the webpage from the IP Address that is hosting it.
   - On another device or the end device you can download a DNS server such as NAMO(MAMP). In MAMP you will first configure by opening MAMP and navigate to preferences, choose server and select Nginx, then look at port and update the Nginx Port to 80. Last, set the servers on by clicking the right power button. In the directory for your operating system type "/MAMP/htdocs/index.html". You should be able to open this in a code editor like VS Code to configure an index.html page which can be accessed when you access the webpage.
   - Once the webpage is configured and the DNS is running, another device can open a web browser and search for the domain. The request is sent out, the server replies, and searching the IP address or domain name should allow the requesting computer to see the index file created.
- 
+
+ # FAQ 
+
+ ### I plugged in the switch but the ports are not glowing. Is it on?
+
+What to Include:
+- Common issues faced during configuration or operation
+- Troubleshooting steps for frequent errors
+- Best practices
+- Tips for maintaining or modifying the system
+
+Filename: Append to the README.md under an FAQ heading.
+Length: Minimum of 5 key questions and answers
+
+
