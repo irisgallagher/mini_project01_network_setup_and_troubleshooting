@@ -22,7 +22,7 @@ Steps to Set Up a Network:
 - To turn the router on, you click on the router you should see a picture of it, click the power button. You know it is on when you can see a green light on.
  5) Connect an ethernet cable from the switch to the router.
 -  To do this on packet tracer, click on the router, go to "Config", choose GigabitEthernet 0/0 (or the one you plugged into) and edit the IP address and subnet mask there. The IP address should be prioritized and a lower number than the end devices.
- 6)  Set up the default gateway for all. A default gateway tells the device where to go if the server isn't responding. For servers and PCs the default gateway should be the IP Address of the router so if the server isn't responding, the request can be sent to other local area networks to find a response. If a router has multiple local area networks that it is connected to, each interface is assigned an IP address that acts as the default gateway for the devices on that subnet. Therefore, the router's default gateway should be the switch of the local area network it is trying to access.
+ 6)  Set up the default gateway for all. A default gateway tells the device where to go if the server isn't responding. For servers and PCs the default gateway should be the IP Address of the router so if the server isn't responding, the request can be sent to other local area networks to find a response. If a router has multiple local area networks that it is connected to, each interface is assigned an IP address that acts as the default gateway for the devices on that subnet. Therefore, the router's default gateway should be the switch of the local area network it is trying to access. The switch and end device's default gateway should be the router's IP addess.
 - For the switch, router, and end devices, you should be able to manipulate the default gateway by clicking on the device in packet tracer, going to "Config", and updating the default gateway. 
   Extra Steps:
 7) Once the network is all set up you can ping the local area network or the other local area networks if the router is connected. This can be done in the terminal by clicking on the end devices and choosing "Desktop" then choosing "Terminal". Once in the terminal, you can use "ping" + the IP of who you are trying to ping. Ping tells you if the device is on the network.
@@ -32,13 +32,26 @@ Steps to Set Up a Network:
 
  # FAQ 
 
- ### I plugged in the switch but the ports are not glowing. Is it on?
+ ### Q1) I plugged in the switch but the ports are not glowing. Is it on?
 
-What to Include:
-- Common issues faced during configuration or operation
-- Troubleshooting steps for frequent errors
-- Best practices
-- Tips for maintaining or modifying the system
+A1) No. If the port lights are not on, the switch is not on. Ensure the cables connecting the port and computer are properly installed. If they are, try to plug and unplug the switch. Sometimes, the switch will shut down or crash in order to preserve itself. 
+
+### Q2) Why can't I ping my local area network? 
+
+A2) Is your firewall up? On a MAC or PC, commonly there is automatically a firewall built inside as a security system to control incoming and outgoing traffic. You can go into your settings and search "firewall" then disable all the firewalls that are up (temporarily, you probably should turn it on after working with your local area network).
+
+### Q3) Why can't I assign the IP Address I want to/ why am I unable to ping somebody else on my local area network? 
+
+A3) An IP Address within a local area network needs to be unique. If you are unable to reach somebody else or assign the IP address you want to, it might be because the IP address is already being used on another device. Check that all the IP addresses within the wide area network are unique. If the IPs are correct, check for typos in the command line; for example, "pnig" vs "ping" vs "Ping". The correct command is "ping" + IP address or domain.
+
+### Q4) Why can't I ping somebody on my wide area network? 
+
+A4) If you are trying to access a wide area network and you are unable to ping them, ensure that the default gateway is correctly configured. If a router has multiple local area networks that it is connected to, each interface is assigned an IP address that acts as the default gateway for the devices on that subnet. Therefore, the router's default gateway should be the switch of the local area network it is trying to access. The switch and end device's default gateway should be the router's IP addess
+
+### Q5) 
+
+A5) Check that the DNS server on the server laptop (the server with the webpage) is properly configured to resolve the domain to the correct IP address. If it is, verify that the requesting laptop (client) is querrying the right server. This can be done with the command "nslookup" + domain name. Also, try to check your router and make sure the default gateway is set to the switch of the local area network with the client server. 
+
 
 Filename: Append to the README.md under an FAQ heading.
 Length: Minimum of 5 key questions and answers
