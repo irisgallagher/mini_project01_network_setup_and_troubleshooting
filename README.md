@@ -12,7 +12,7 @@ Cases for the System:
 
 Steps to Set Up a Network: 
  1) Add the end devices (laptops, PCs, printers, tablets, servers, etc)
-This can be found in packet tracer by selecting "End Devices" in the bottom left corner, and choosing the end devices you want from the box of options to the right. 
+- This can be found in packet tracer by selecting "End Devices" in the bottom left corner, and choosing the end devices you want from the box of options to the right. 
  2) Add the switch and connect the switch to the end devices using an ethernet cable (Copper-Straight Through Cable). A switch provides connectivity between hosts within the same local area network (LAN) but not connectivity to other LANs. You can differentiate them from a router because a switch has more ports (so you can connect more end devices to it)
 This can be found in packet tracer by selecting "Network Devices" from the bottom left corner and choosing switches from the bottom row. To add the cables, choose "Connections" from the bottom left box and the "Copper-Straight Through" cable from the box to the right. To connect the cables, click the switch and choose the first available ethernet port(Fast Ethernet 0 and 1), then click on the end device and do the same steps. Repeat the connection for every end device you have. 
  3) Set up the IPv4 Addresses for the end devices and switches.
