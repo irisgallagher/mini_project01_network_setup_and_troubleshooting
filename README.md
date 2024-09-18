@@ -1,7 +1,7 @@
 # mini_project01_network_setup_and_troubleshooting
 
-**
-Configuration Guide **
+
+*Configuration Guide 
 A written guide detailing the configuration process for the system. The guide documents the steps to replicate the system setup, ensuring others can follow and troubleshoot. This document is essential for system maintenance, replication, and onboarding.
 
 What to Include:
